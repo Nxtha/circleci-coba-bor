@@ -20,8 +20,8 @@ KDType=""
 
 export DEBIAN_FRONTEND=noninteractive
 export KBUILD_BUILD_USER="Nxtha"
-[ ! -z "${CIRCLE_BRANCH}" ] && branch="${CIRCLE_BRANCH}" && export KBUILD_BUILD_HOST="#RakasasaGang-CircleCI" && TotalCores="$(nproc --all)"
-[ ! -z "${DRONE_BRANCH}" ] && branch="${DRONE_BRANCH}" && export KBUILD_BUILD_HOST="#RaksasaGang-DroneCI" && TotalCores="$(nproc --all)"
+[ ! -z "${CIRCLE_BRANCH}" ] && branch="${CIRCLE_BRANCH}" && export KBUILD_BUILD_HOST="RakasasaGang-CircleCI" && TotalCores="$(nproc --all)"
+[ ! -z "${DRONE_BRANCH}" ] && branch="${DRONE_BRANCH}" && export KBUILD_BUILD_HOST="RaksasaGang-DroneCI" && TotalCores="$(nproc --all)"
 
 # just fix for dtc clang
 check=$(ls /usr/lib/x86_64-linux-gnu | grep libisl.so -m1)

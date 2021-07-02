@@ -365,7 +365,7 @@ MakeZip(){
     cp -af anykernel-real.sh anykernel.sh
     sed -i "s/kernel.string=.*/kernel.string=$KName/g" anykernel.sh
 	sed -i "s/kernel.for=.*/kernel.for=$CODENAME/g" anykernel.sh
-	sed -i "s/kernel.compiler=.*/kernel.compiler=$TypeBuilder/g" anykernel.sh
+	sed -i "s/kernel.compiler=.*/kernel.compiler=${TypeBuilder}/g" anykernel.sh
 	sed -i "s/kernel.made=.*/kernel.made=Nxtha @RaksasaGang/g" anykernel.sh
 	sed -i "s/kernel.version=.*/kernel.version=$KVer/g" anykernel.sh
 	sed -i "s/build.date=.*/build.date=$GetCBD/g" anykernel.sh
